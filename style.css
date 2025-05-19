@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TT Lakes";
-  src: local("TT Lakes"), url("TTLakes/TTLakes-Regular.woff"); 
+  src: local("TT Lakes"), url("TTLakes/TTLakes-Regular.woff") format(woff); 
 }
   html, body{
 font-family: "TT Lakes";
@@ -167,15 +167,15 @@ height: 160px;
  } 
 .main-inform{
  display: flex;
- flex: 1fr 50%; 
+ justify-content: center;
 }
   .main-inform__txt{
-width: 50%;
+width: 70%;
 min-height: 160px;
 }
 .main-inform__block__picture {
- width: 530px;
- height: 307px;
+ min-width: 630px;
+ min-height: 357px;
  
 }
 .header__repair {
@@ -183,6 +183,56 @@ min-height: 160px;
 }
 .header__checkstatus{
  padding-top: 20px; 
+}
+
+}
+
+@media (min-width: 1000px) {
+ .header{
+ display: none; 
+ } 
+.main-inform{
+ display: flex;
+ justify-content: center;
+}
+  .main-inform__txt{
+width: 70%;
+min-height: 160px;
+}
+.main-inform__block__picture {
+ min-width: 630px;
+ min-height: 357px;
+ 
+}
+.header__repair {
+ padding-top: 20px; 
+}
+.header__checkstatus{
+ padding-top: 20px; 
+}
+
+}@media (min-width: 1600px) {
+ .header{
+ display: none; 
+ } 
+.main-inform{
+ display: flex;
+ justify-content: center;
+}
+  .main-inform__txt{
+width: 60%;
+min-height: 160px;
+font-size: 21px;
+}
+.main-inform__block__picture {
+ width: 830px;
+ height: 557px;
+ 
+}
+.box, 
+.services__menu-btn{
+ font-size: 21px;
+ align-items: center; 
 }
 
 }
